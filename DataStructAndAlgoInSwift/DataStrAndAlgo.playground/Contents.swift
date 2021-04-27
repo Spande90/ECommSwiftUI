@@ -22,3 +22,17 @@ appendlist.append(2)
 appendlist.append(3)
 print(appendlist)
 print("-------------------------------")
+print("insert linkedlist")
+var insertlist = LinkedList<Int>()
+insertlist.push(3)
+insertlist.push(2)
+insertlist.push(1)
+
+print("Before Inserting: \(insertlist)")
+var middleNode = insertlist.node(at: 1)!
+for _ in 1...4 {
+    middleNode = insertlist.insert(-1, after: middleNode)
+}
+print("After Inserting: \(insertlist)")
+
+
