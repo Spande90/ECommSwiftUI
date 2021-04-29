@@ -35,4 +35,14 @@ for _ in 1...4 {
 }
 print("After Inserting: \(insertlist)")
 
+print("-------------------------------")
+print("pop linkedlist")
+var popList = LinkedList<Int>()
+popList.push(3)
+popList.push(2)
+popList.push(1)
+print("Before popping: \(popList)")
+let popValue = popList.pop()
+print("After popping list: \(popList)")
+print("Popped Value: " + String(describing: popValue))
 
